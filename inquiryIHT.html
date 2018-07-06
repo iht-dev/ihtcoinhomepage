@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title class="iht" data-main="inquirytitle">IHT - Check IHT Account Lockup Information</title>
+		<script>
+			function getQueryString(name) {
+				var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+				var r = window.location.search.substr(1).match(reg);
+				if(r != null) return r[2];
+				return null;
+			}
+			lang = getQueryString('lang') ? getQueryString('lang') : 'eng';
+			if((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+				window.location.href = 'webInquiryIht.html?lang=' + lang;
+			} else {
+				window.imgChar = 0;
+				// window.location.href='webindex.html'
+			}
+		</script>
+		<meta name="description" content="i-house.com is a global real estate blockchain cloud platform.Through IHT’s smart contract, large real estate can be split and distributed to multiple financial institutions. In this way, users can get the opportunity to invest in real estate with small amounts of money and enjoy high security and low risk investment.">
+		<!-- i-house.com项目自筹备起就定位为全球不动产区块链交易云平台。IHT是i-house.com项下开发的专门用于拆分不动产的智能合约技术和分布式记账技术。通过IHT智能合约可将大额不动产拆分并分配给金融机构，以此，给予用户以小额资金投资并获益于不动产的机会。并保障了投资的安全性和低风险性。 -->
+		<meta name="keywords" content="IHT,IHTCOIN,IHT官网,sharing property">
+		<meta http-equiv="cache-control" content="max-age=0" />
+		<meta http-equiv="cache-control" content="no-cache" />
+		<meta http-equiv="expires" content="0" />
+		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+		<meta http-equiv="pragma" content="no-cache" />
+		<meta http-equiv="Cache-Control" content="no-transform " />
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<link rel="shortcut icon" type="image/png" href="dist/images/iht.ico" />
+		<link href="dist/css/main.min.css?v=20180212.css" rel="stylesheet" />
+		<link rel="alternate" href="https://ihtcoin.com/inquiryIHT.html" hreflang="en" />
+		<link rel="alternate" href="https://ihtcoin.com/inquiryIHT.html?lang=ch" hreflang="zh" />
+		<style type="text/css">
+			html,body{
+				/*height: 100%;*/
+				/*overflow-y: auto;*/
+				background: #F1F1F1;
+			}
+			.flashbox{
+				background: #fff;
+			}
+			.zmbox{
+				width: 80px;
+				height: 40px;
+			}
+			.zmbox ul{
+				overflow: hidden;
+				height:40px;
+				text-align: center;
+				line-height: 40px;
+				border: 1px solid #ccc;
+				border-radius: 5px;
+			}
+			.zmbox ul:hover{
+				background:#fff;
+				height:120px;
+				cursor:pointer;
+			}
+			.inquiryMain input{
+				font-size: 20px;
+			}
+		</style>
+		<!-- Google Tag Manager -->
+		<script>
+			(function(w, d, s, l, i) {
+				w[l] = w[l] || [];
+				w[l].push({
+					'gtm.start': new Date().getTime(),
+					event: 'gtm.js'
+				});
+				var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s),
+					dl = l != 'dataLayer' ? '&l=' + l : '';
+				j.async = true;
+				j.src =
+					'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+				f.parentNode.insertBefore(j, f);
+			})(window, document, 'script', 'dataLayer', 'GTM-5MCJVTR');
+		</script>
+		<!-- End Google Tag Manager -->
+	</head>
+	<body>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5MCJVTR"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+		<div class="navbar js-navbar">
+			<a  class="logo" id="indexLogo">IHT</a>
+			<div class="container">
+				<ul class="navlist">
+	                <li><a  id="indexPage"><span data-main="navhome" class="iht"></span></a></li>
+	                <li><a  id="projecta"><span data-main="navproject" class="iht"></span></a></li>
+	                <li><a  id="roadmapa"><span data-main="navroadmap" class="iht"></span></a></li>
+	                <li><a  id="teama"><span data-main="navteam" class="iht"></span></a></li>
+	                <li><a  id="newsa"><span data-main="navnews" class="iht"></span></a></li>
+	                <li><a  id="faqa"><span data-main="navfaq" class="iht"></span></a></li>
+	                <li>
+						<a href="https://medium.com/ihtoffical" target="_blank"><span data-main="narblog" class="iht"></span></a>
+					</li>
+	            </ul>
+				<!-- <div class="language" id="index-flag">
+					<a href="javascript:void(0);"><em class="iht" data-main="languageImg"></em><i data-main="language" class="iht"></i></a>
+				</div> -->
+				<div class="language">
+					<div class="zmbox">
+						<ul class="zmList">
+							<li data-name="1"></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+			<div class="inquiryBox">
+				<h1 class="iht" data-main="groupLock"></h1>
+				<div class="inBox">
+					<div class="inquiryMain">
+						<input type="text" data-main="ETHAddress" class="ihtinput inputrec">
+						<button data-main="query" class="iht btnrec" id="emailBtn"></button>
+						<img class="inClose" src="dist/images/inClose.jpg" />
+					</div>
+					<div class="inquiryC">
+						<img class="loading" src="dist/images/checkImg/loading.gif" />
+					</div>
+				</div>
+				<!--开始渲染页面-->
+				<div class="ihtShow ihtCon">
+					<!--主体未锁定量-->
+					<div class="inquiryB unLockNumPrin">
+						<span class="iht" data-main="unLockNumPrin"></span>
+						<span class="ihtUnNumPrin"></span>
+					</div>
+					<!--主体锁定数量-->
+					<div class="inquiryB">
+						<span class="iht" data-main="lockNumPrin"></span>
+						<span class="ihtNumPrin"></span>
+					</div>
+					<div class="inquiryTime">
+						<span class="iht" data-main="lockTimePrin"></span>
+						<span class="timeLockPrin"></span>
+					</div>
+
+					<!--奖励锁定数量-->
+					<div class="inquiryB">
+						<span class="iht" data-main="lockNumBons"></span>
+						<span class="ihtNumBons"></span>
+					</div>
+					<div class="inquiryTime inBtp">
+						<span class="iht" data-main="lockTimeBons"></span>
+						<span class="timeLockBons"></span>
+					</div>
+					<!------------------------------------------------------->
+				</div>
+				<div class="ihtNone iht ihtCon ihtCC" data-main="ihtNone">
+
+				</div>
+				<div class="addErr iht ihtCon ihtCC" data-main="addErr">
+
+				</div>
+				<!--添加按钮锚点-->
+				<a target="_blank" id="lockOut" class="ihtCon lockOut iht" data-main="lockOut"></a>
+			</div>
+		<!--</div>-->
+		<script src="dept/jquery.min.js"></script>
+		<script src="cfg/config.js"></script>
+	    <script src="dist/js/data.js?v=201802221"></script>
+		<script data-main="dist/lib/main.js?v=2018020911" src="dist/lib/require.js?time=2018020911"></script>
+		<script>
+			$('#lockOut').click(function(){
+				window.location.href = 'checkAccountIht.html?lang='+lang+'&lock=lock'
+			})
+			pathEnv = _config.url;
+			count = 0;
+            if(getQueryString('lang') == 'ch') {
+                $('meta[name=description]').attr('content', '输入您的ETH钱包地址来查看您账户的锁定IHT信息。')
+                $('head').append('<link rel="canonical" href="https://ihtcoin.com/inquiryIHT.html?lang=ch" /><link rel="alternate" media="only screen and (max-width: 640px)" href="https://ihtcoin.com/webInquiryIht.html?lang=ch">')
+            } else {
+                $('meta[name=description]').attr('content', 'Enter your ETH wallet address to check the status information of locked up IHT on your account.')
+                $('head').append('<link rel="canonical" href="https://ihtcoin.com/inquiryIHT.html" /><link rel="alternate" media="only screen and (max-width: 640px)" href="https://ihtcoin.com/webInquiryIht.html">')
+            };
+
+            function proces(address){
+				$('.inquiryC').show()
+				$('.ihtCC').hide();
+				$.ajax({
+					type:"post",
+					url:pathEnv+"/api/iht/toolkit",
+					async:true,
+					headers : {
+						"Content-Type": "application/json"
+					},
+					data : JSON.stringify({
+						'userAddress' : address
+					}),
+					success(data){
+						$('.inquiryC').hide()
+						count = 0;
+						if(data.status = 'success'){
+							if(data[0]){
+								var ihtData = data[0].data;
+								$('.ihtShow').show();
+								//添加主体未锁定量
+								$('.ihtNumPrin').text(conver(ihtData.principleLockAmount)+' IHT');
+								$('.ihtNumBons').text(conver(ihtData.bonusLockAmount)+' IHT');
+								//主体锁定时间
+								if(lang == 'ch'){
+									noText = '暂无'
+								}else{
+									noText = 'Not available'
+								}
+								if(ihtData.startAt == 0){
+									$('.timeLockPrin').text(noText + ' '+ '(UTC +8)')
+									//主体锁定时间
+									$('.timeLockBons').text(noText + ' '+ '(UTC +8)')
+								}else{
+									$('.timeLockPrin').text(timestampToTime(ihtData.startAt)+' '+'-'+ ' '+timestampToTime(ihtData.principleLockPeriod) + ' '+ '(UTC +8)');
+									//主体锁定时间
+									$('.timeLockBons').text(timestampToTime(ihtData.startAt)+' '+'-'+ ' '+timestampToTime(ihtData.bonusLockPeriod) + ' '+ '(UTC +8)')
+								};
+
+								$('.lockOut').css('display','block')
+							}else{
+								$('.inquiryC').hide()
+								$('.ihtShow').hide();
+								$('.lockOut').hide()
+								alert(data.message)
+							}
+						}else{
+							$('.ihtShow').hide()
+							$('.lockOut').hide()
+							alert(data.message)
+						}
+					},
+					error(XMLHttpRequest){
+						$('.inquiryC').hide()
+						$('.ihtShow').hide()
+						$('.lockOut').hide()
+						count = 0;
+						alert('请求报错，请重试')
+					},
+					complete(){
+						$('.inquiryC').hide()
+					}
+				});
+			};
+			//主体未锁定量
+			function unlock(address){
+				$.ajax({
+					type:"get",
+					url:pathEnv+"/api/mlg/tokenBalance",
+					async:true,
+					headers : {
+						"Content-Type": "application/json"
+					},
+					data : {
+						'address' : address
+					},
+					success(data){
+						$('.ihtUnNumPrin').text(conver(data[0].data.balance)+' IHT');
+					},
+					error(XMLHttpRequest){
+						alert('请求报错，请重新查询')
+					},
+					complete(){
+
+					}
+				});
+			}
+
+
+			$('#emailBtn').click(function(e){
+				clk(e)
+			});
+			$('.inputrec').attr("autocomplete", "off");
+			$('.inputrec').keydown(function(event) {
+				var e = window.event || event;
+				if(e.keyCode == 13){
+					clk(e)
+				}
+			})
+			//封装点击事件函数
+			function clk(ea){
+				$('.ihtCon').hide()
+//				if(!$('.addErr').is(':hidden')){
+//					tg(ea).preventDefault()
+//				}else{
+				var inputVal = $.trim($('.ihtinput').val());
+				var inputValLength = inputVal.length;
+				var inputValStart = inputVal.slice(0,2);
+				if(inputVal == ''){
+					if(lang == 'ch'){
+						alert('钱包地址不能为空');
+					}else if(lang == 'ja'){
+						alert('ETHウォレットアドレスを入力してください')
+					}else{
+						alert('Please enter ETH wallet address');
+					}
+					$('.ihtCon').hide()
+				}else if(inputValLength !== 42 || inputValStart !== '0x'){
+					$('.ihtCon').hide()
+					$('.addErr').show();
+//					setTimeout(function(){
+//						$('.addErr').hide();
+//					},1500)
+				}else{
+					if(count == 0){
+						count = 1
+						proces(inputVal);
+						unlock(inputVal)
+						setTimeout(function(){
+							count = 0
+						},5000)
+					}
+				}
+//				}
+			}
+
+			$('.inClose').click(function(){
+				$('.ihtinput').val('');
+				$('.ihtinput').focus();
+				$('.inClose').hide();
+				$('.ihtCon').hide()
+			});
+			//封装兼容浏览器target函数
+			function tg(e) {
+				var theEvent = window.e || e;
+//				var theObj = theEvent.target || theEvent.srcElement;
+				var theObj = theEvent
+				return theObj
+			};
+			//数字换算公式
+			function conver(num){
+				return num/(Math.pow(10,18))
+			};
+			//封装时间戳换算公司
+			function timestampToTime(timestamp) {
+		        var date = new Date(timestamp * 1000);//时间戳为10位需*1000，时间戳为13位的话不需乘1000
+		        Y = date.getFullYear() + '.';
+		        M = (date.getMonth()+1 < 10 ? '0'+(date.getMonth()+1) : date.getMonth()+1) + '.';
+		        D = (date.getDate() < 10 ? '0' + date.getDate() : date.getDate()) + ' ';
+		        h = (date.getHours() < 10 ? '0' + date.getHours() : date.getHours()) + ':';
+		        m = (date.getMinutes() < 10 ? '0' + date.getMinutes() : date.getMinutes()) + ':';
+		        s = (date.getSeconds() < 10 ? '0' + date.getSeconds() : date.getSeconds());
+		        return Y+M+D+h+m+s;
+		   };
+		   //监听input框输入框事件
+		   $('.ihtinput').bind('input propertychange', function() {
+				var val = $(this).val();
+				if($.trim(val) == '') {
+					$('.ihtCon').hide()
+					$('.inClose').hide()
+				}else{
+					$('.inClose').show()
+				}
+			});
+		</script>
+	</body>
+</html>

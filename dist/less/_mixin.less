@@ -1,0 +1,58 @@
+.opacity(@opacity){
+  filter:alpha(opacity=@opacity);  /*支持 IE 浏览器*/
+  -moz-opacity:@opacity/100; /*支持 FireFox 浏览器*/
+  opacity:@opacity/100;  /*支持 Chrome, Opera, Safari 等浏览器*/
+}
+.borderRadius(@radius){
+  -webkit-border-radius:@radius ;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
+.transFrom(@transform){
+  -webkit-transform: @transform;
+  -moz-transform: @transform;
+  -ms-transform: @transform;
+  -o-transform: @transform;
+  transform: @transform;
+}
+
+.animation(@animation){
+  -webkit-animation: @animation;
+  -o-animation: @animation;
+  animation: @animation;
+}
+.animationDelay(@delay){
+  -webkit-animation-delay: @delay;
+  -moz-animation-delay: @delay;
+  -o-animation-delay: @delay;
+  animation-delay: @delay;
+}
+.translation(@translation){
+  -webkit-transition: @translation;
+  -moz-transition: @translation;
+  -ms-transition: @translation;
+  -o-transition: @translation;
+  transition: @translation;
+}
+.gradient(@startcolor,@endcolor){
+
+  background:-moz-linear-gradient(left, @startcolor, @endcolor);
+  background:-webkit-gradient(linear, 0 0, right 0, from(@startcolor), to(@endcolor));
+  background:-o-linear-gradient(left, @startcolor, @endcolor);
+}
+.stroke(@stroke){
+  text-stroke: @stroke;
+  -webkit-text-stroke: @stroke;
+}
+.textShadow(@shadow){
+  text-shadow: @shadow;
+}
+.boxShadow(@shadow){
+  -webkit-box-shadow: @shadow;
+  -moz-box-shadow: @shadow;
+  box-shadow: @shadow;
+}
+.backgroundSize(@size){
+  -webkit-background-size: @size;
+  background-size: @size;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>DEMO</title>
+</head>
+<body>
+	<button id="b1">邮箱和付款信息提交</button>
+	<br>
+	<input id="pic" type="file">
+	<br>
+	<input type="text" id="name" placeholder="姓名"><input type="text" id="email" placeholder="email"><button id="b2">邮件通知</button>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<!-- 这是测试环境，正式环境去掉”http://“后面的”test.“即可，svn中 cfg/config.js文件必须忽略 -->
+	<script src="cfg/config.js"></script>
+	<script>
+		$(function() {
+			$('#b1').click(function() {
+				//"邮箱“这个字段必须有,图片字段以“证件"开头，其他字段任意填写
+				$.post(_config.url + '/api/table/collect?type=new', {
+					data : JSON.stringify({
+						"邮箱" : "ares.xie@ihtcoin.com",
+						"币种" : "ETH",
+						"投资额" : "50",
+						"钱包地址" : "0x123456",
+						"姓名" : "Ares",
+						"国籍" : "CN",
+						"地址" : "长安街",
+						"证件1":"http://seopic.699pic.com/photo/50006/8357.jpg_wh1200.jpg",
+						"证件2":"http://seopic.699pic.com/photo/50006/8357.jpg_wh1200.jpg"
+					})
+				}, function(data, status, jqXHR) {
+					if (jqXHR.status == 204) {
+						alert('提交成功')
+					} else {
+						alert('提交失败')
+					}
+				})
+			})
+
+			$('#pic').change(function() {
+				var data = new FormData();
+				data.append('file', $(this)[0].files[0])
+				$.ajax({
+					url : _config.url + '/api/table/image',
+					data : data,
+					cache : false,
+					type : 'POST',
+					processData : false,
+					contentType : false,
+					complete : function(jqXHR) {
+						if (jqXHR.status == 200) {
+							alert('提交成功')
+						} else {
+							alert('提交失败')
+						}
+					}
+				})
+			})
+			
+			$('#b2').click(function(){
+				var mail=$('#email').val()
+				var name=$('#name').val()
+				//英文用 en
+				var lng='zh'
+				$.post(_config.url+'/api/table/mail',{name:name,email:mail,lng:lng},function(data,str,xhr){
+					if(xhr.status==204){
+						alert('成功');
+					}else{
+						alert('失败');
+					}
+				});				
+			})
+		})
+	</script>
+</body>
+</html>

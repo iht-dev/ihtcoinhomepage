@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="11.23" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="提交弹窗" transform="translate(-580.000000, -315.000000)">
+            <g id="Group-15" transform="translate(580.000000, 315.000000)">
+                <g id="Group-3">
+                    <circle id="Oval" fill="#FFFFFF" cx="20" cy="20" r="15"></circle>
+                    <path d="M26.54,29.1742857 L29.8214286,13.7057143 C30.1114286,12.3442857 29.33,11.8085714 28.4371429,12.1428571 L9.15142855,19.5757143 C7.8342857,20.0885714 7.85714285,20.8257143 8.92857145,21.16 L13.8614286,22.7 L25.3128571,15.49 C25.8485714,15.1328571 26.34,15.3342857 25.9385714,15.6914286 L16.6757143,24.0614286 L16.3185714,29.1514286 C16.8314286,29.1514286 17.0557143,28.9285714 17.3228571,28.66 L19.7328571,26.3385714 L24.7328571,30.0214286 C25.6485714,30.5342857 26.2957143,30.2671429 26.5414286,29.1728571 L26.54,29.1742857 Z M40,20 C40,31.0485714 31.0485714,40 20,40 C8.95142855,40 0,31.0485714 0,20 C0,8.95142855 8.95142855,0 20,0 C31.0485714,0 40,8.95142855 40,20 Z" id="icon_telegram" fill="#2CA4D7" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

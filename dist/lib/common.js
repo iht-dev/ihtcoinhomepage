@@ -1,0 +1,4 @@
+define(function(){var GetRequest=function(){var urll=location.search;var url=decodeURI(urll)
+    var theRequest=new Object();if(url.indexOf("?")!=-1){var str=url.substr(1);strs=str.split("&");for(var i=0;i<strs.length;i++){theRequest[strs[i].split("=")[0]]=unescape(strs[i].split("=")[1]);}}
+    return theRequest;};var popup=function(popupName){var _scrollHeight=$(document).scrollTop(),_windowHeight=$(window).height(),_windowWidth=$(window).width(),_popupHeight=popupName.height(),_popupWeight=popupName.width();_posiTop=(_windowHeight-_popupHeight)/2;_posiLeft=(_windowWidth-_popupWeight)/2;popupName.css({"left":_posiLeft+"px","top":_posiTop+"px","display":"block"});}
+    return{GetRequest:GetRequest,popup:popup}})
