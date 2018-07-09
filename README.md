@@ -8,13 +8,24 @@ This is [IHT](https://etherscan.io/token/0xeda8b016efa8b1161208cf041cd86972eee0f
 
 ## Directory structure 
 
-### directory 1
+### 404
 
-This directory contains the XYZ code.  
+This directory contains the 404 page.  
 
-### directory 2
-This directory contains the XYZ code.
+### cfg
+This directory contains the website config.
+
+### dept
+This directory contains the thirdpart javascrpit libraries.
+
+### dist
+This directory contains the resource files such as pictures and style sheets, etc.
+
+### recruit
+This directory contains the recruit page.
 
 ### to run:
 
-```To be added
+```bash
+open index.html  # with Browser
+```
