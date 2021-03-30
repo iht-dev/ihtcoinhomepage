@@ -104,7 +104,6 @@
                     <li><a  id="indexPageWeb" class="on"><span data-main="navhome" class="iht"></span></a></li>
                     <li><a href="javascript:AnchorClick('#project')"><span data-main="navproject" class="iht"></span></a></li>
                     <li><a href="javascript:AnchorClick('#roadmap')"><span data-main="navroadmap" class="iht"></span></a></li>
-                    <li><a href="javascript:AnchorClick('#team')"><span data-main="navteam" class="iht"></span></a></li>
                     <li>
 						<a href="javascript:AnchorClick('#news')"><span data-main="navnews" class="iht"></span></a>
 					</li>
@@ -152,9 +151,6 @@
                 <p style="margin-top: .4rem;">
                     <a class="iht linkbox linkwhite" data-main="legal"></a>
                 </p>
-                <p >
-                    <a style="border-color: #fff;background-color: inherit;" href="javascript:void(0);" class="iht linkbox linkreg" data-main="regTitle" id="webreg"></a>
-				</p>
             </div>
             <div class="iht issue" style="display: none;"data-main="issue"></div>
         		<div class="passport">
@@ -163,94 +159,6 @@
 				<!--</span>-->
 				<span class="iht" data-main="passport"></span>
 			</div>
-			<!--新添加倒计时-->
-			<div class="pma">
-				<span class="iht tokenSale" data-main="tokenSale"></span>
-				<div class="countDown">
-					<!--<span class="iht tokenSale" data-main="tokenSale"></span>-->
-					<div class="count_down">
-						<div class="counta">
-							<span class="day_num"></span>
-							<p class="iht" style="font-size: 12px;" data-main="countDay"></p>
-						</div>
-						<div class="imao">
-							<img src="dist/images/fenzu.svg" />
-						</div>
-						<div class="counta">
-							<span class="hour_num"></span>
-							<p class="iht" data-main="countHour"></p>
-						</div>
-						<div class="imao">
-							<img src="dist/images/fenzu.svg" />
-						</div>
-						<div class="counta">
-							<span class="min_num"></span>
-							<p class="iht" data-main="countMin"></p>
-						</div>
-						<div class="imao">
-							<img src="dist/images/fenzu.svg" />
-						</div>
-						<div class="counta">
-							<span class="sec_num"></span>
-							<p class="iht" data-main="countSec"></p>
-						</div>
-					</div>
-				</div>
-				<span class="iht tokenProrss" data-main="tokenProrss"></span>
-				<!--进度条控制-->
-				<div id="bar">
-					<div id="progess">
-						<p></p>
-						<div class="peoAbl">
-							<div class="pera"></div>
-							<div class="perb">ETH</div>
-						</div>
-					</div>
-				</div>
-				<div class="sanjiao">
-					<div class="sjLf">
-						<div class="triangle_border_down">
-						    <span></span>
-						</div>
-						<p class="iht" data-main="minMoney"></p>
-						<div class="minEth"></div>
-					</div>
-					<div class="sjRj">
-						<div class="triangle_border_down">
-						    <span></span>
-						</div>
-						<p class="iht" data-main="maxMoney"></p>
-						<div class="maxEth"></div>
-					</div>
-				</div>
-				<!--渲染文案-->
-				<ul id="starta">
-					<li class="liLf">
-						<span class="iht" data-main="开始时间">
-
-						</span>
-						<span class="sa">2018.01.10 10:00pm</span>
-					</li>
-					<li class="liRg">
-						<span class="iht" data-main="结束时间">
-
-						</span>
-						<span class="sb">2018.02.01 01:00am</span>
-					</li>
-					<li class="liLf">
-						<span class="iht" data-main="已筹集">
-
-						</span>
-						<span class="sc"></span>
-					</li>
-					<li class="liRg">
-						<span class="iht" data-main="token价格">
-
-						</span>
-						<span class="sd"></span>
-					</li>
-				</ul>
-				</div>
 			<!--添加锁定信息-->
 			<div class="addLock">
 				<div class="iht accountKey" data-main="accountKey"></div>
@@ -411,38 +319,26 @@
             <canvas class="canvas" id="canvas"></canvas>
         </div>
     </div>
-    <div class="teambox" id="team">
-        <div class="container">
-            <h3 class="title iht" data-main="teamTitle"></h3>
-            <ul class="teamlist js-teamlist js-mteamlist">
-            </ul>
-            <div class="title iht" data-main="advisoryTitle"></div>
-            <ul class="teamlist advisorylist js-advisorylist js-mteamlist">
-            </ul>
-
-        </div>
-    </div>
     <div class="backgroundbox">
         <div class="container">
             <div class="title iht" data-main="teambackgroundTitle"></div>
             <ul class="teambacklist js-teambacklist">
                 <li class="yahoo">
                     <a href="https://www.yahoo.com/" target="_blank"><img src="dist/images/mobile/yahoo.jpg"/></a>
-                </li><li class="microsoft">
-                    <a href="https://www.microsoft.com/" target="_blank"><img src="dist/images/mobile/microsoft.jpg"/></a>
                 </li>
                 <li class="baidu">
                     <a href="https://www.baidu.com/" target="_blank"><img src="dist/images/mobile/baidu.jpg"/></a>
-                </li><li class="wanda">
+                </li>
+                <li class="wanda">
                     <a href="http://www.wanda.cn/" target="_blank"><img src="dist/images/mobile/wanda.jpg"/></a>
-                </li><li class="gangwan">
+                </li>
+                <li class="gangwan">
                     <a href="http://www.mtr.com.hk/ch/customer/main/index.html" target="_blank"><img src="dist/images/mobile/mtr.jpg"/></a>
-                </li><li>
+                </li>
+                <li>
                     <a href="http://www.i-click.com" target="_blank">
                         <img src="dist/images/iclick.jpg">
                     </a>
-                </li><li class="xiaomi">
-                    <a href="https://www.mi.com/index.html" target="_blank"><img src="dist/images/mobile/xiaomi.jpg"/> </a>
                 </li>
             </ul>
 
